@@ -13,11 +13,13 @@ public class StatesManager : SingletonBehavior<StatesManager>
 
     void Start()
     {
+        //ステータスリセット
         ResetPlayerState(1);
         ResetPlayerState(2);
         DontDestroyOnLoad(gameObject);
     }
-
+    
+    //入力されたidのプレイヤーのステータスを返す
     public State GetPlayerState(int id)
     {
         if (id == 1)
@@ -28,7 +30,9 @@ public class StatesManager : SingletonBehavior<StatesManager>
             return playerStateTwo;
         }
     }
+    
 
+    //入力されたidのプレイヤーのステータスをリセットする
     public void ResetPlayerState(int id)
     {
         if (id == 1)
@@ -39,6 +43,8 @@ public class StatesManager : SingletonBehavior<StatesManager>
             playerStateTwo = new State();
         }
     }
+
+    //タイプの数値を入力することで色を反映したタイプを表示する
     public string TypeName(int type)
     {
         string typename = default;
@@ -68,7 +74,9 @@ public class StatesManager : SingletonBehavior<StatesManager>
         }
         
         return typename;
-    }    
+    }
+
+    //ColerIDにタイプのidを入力することでstの文字をタイプの色にする
     public string ChengeTypeColer(string st,int ColerID)
     {
         string typename = default;
@@ -98,10 +106,10 @@ public class StatesManager : SingletonBehavior<StatesManager>
         }
         
         return typename;
-    }  
-
+    }
 }
 
+//プレイヤーのステータス
 public class State
 {
     public string stname;

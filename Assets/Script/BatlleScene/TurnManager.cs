@@ -8,7 +8,8 @@ public class TurnManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] BattleManager bm;
-
+    
+    //ターン表示
     void Start()
     {
         text.text = "Turn : " + bm.TurnNum;

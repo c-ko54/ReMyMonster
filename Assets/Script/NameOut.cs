@@ -13,6 +13,7 @@ public class NameOut : MonoBehaviour
         int id = StatesManager.instance.PlayerNumber;
         State state = StatesManager.instance.GetPlayerState(id);
 
+//設定されたステータスを表示
         KeyText.text =
             "NAME : " + state.stname + "\n" +
             "TYPE : " + StatesManager.instance.TypeName(state.type) + "\n" +
@@ -25,7 +26,8 @@ public class NameOut : MonoBehaviour
             "TECHNIC2 : " + StatesManager.instance.ChengeTypeColer(GameConst.tecs[state.Tec2], GameConst.tecsType[state.Tec2]) + "\n" +
             "powwer : " + GameConst.tecsPowwer[state.Tec2] + " " + GameConst.tecsEffect[state.Tec2] + "\n" +
             "TECHNIC3 : " + StatesManager.instance.ChengeTypeColer(GameConst.tecs[state.Tec3], GameConst.tecsType[state.Tec3]) + "\n" +
-            "powwer : " + GameConst.tecsPowwer[state.Tec3] + " " + GameConst.tecsEffect[state.Tec3];
+            "power : " + GameConst.tecsPowwer[state.Tec3] + " " + GameConst.tecsEffect[state.Tec3];
     }
 }
+
 // 文字色変更　"<color=\"red\">NAME : "+ state.stname + "</color>\n"

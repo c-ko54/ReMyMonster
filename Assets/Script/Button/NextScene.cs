@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class NextScene : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //一人目作成時なら二人目作成画面、二人目作成時なら確認画面に移行する
     public void GoNext()
     {
+        SoundManager.Instance.PlaySE(SESoundData.SE.select);
         if(StatesManager.instance.PlayerNumber == 1){
             StatesManager.instance.PlayerNumber = StatesManager.instance.PlayerNumber + 1;
             SceneManager.LoadScene("2PCreateScene");

@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GoCreate : MonoBehaviour
 {
+    public string scenename;
     // Start is called before the first frame update
+
+    //scenenameのシーンに移行する
     public void OnClick()
     {
-        SceneManager.LoadScene("1PCreateScene");
+
+        SoundManager.Instance.PlaySE(SESoundData.SE.select);
+        SceneManager.LoadScene(scenename);
     }
 }

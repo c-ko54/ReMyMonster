@@ -10,27 +10,38 @@ public class PowerSet : MonoBehaviour
     public int id;
     public int tecID;
 
-    void Start()
+    void Start()//技の威力の表示
     {
-            if(id == 1){
-            if(tecID == 1){
-                KeyText.text = ""+ GameConst.tecsPowwer[battleManager.state1.Tec1];
+        //1P側
+        if (id == 1)
+        {
+            if (tecID == 1)
+            {
+                KeyText.text = "" + GameConst.tecsPowwer[battleManager.state1.Tec1];
             }
-            if(tecID == 2){
-                KeyText.text = ""+ GameConst.tecsPowwer[battleManager.state1.Tec2];
+            if (tecID == 2)
+            {
+                KeyText.text = "" + GameConst.tecsPowwer[battleManager.state1.Tec2];
             }
-            if(tecID == 3){
-                KeyText.text = ""+ GameConst.tecsPowwer[battleManager.state1.Tec3];
+            if (tecID == 3)
+            {
+                KeyText.text = "" + GameConst.tecsPowwer[battleManager.state1.Tec3];
             }
-        }else{
-            if(tecID == 1){
-                KeyText.text = ""+ GameConst.tecsPowwer[battleManager.state2.Tec1];
+        }
+        else
+        {
+            //2P側
+            if (tecID == 1)
+            {
+                KeyText.text = "" + GameConst.tecsPowwer[battleManager.state2.Tec1];
             }
-            if(tecID == 2){
-                KeyText.text = ""+ GameConst.tecsPowwer[battleManager.state2.Tec2];
+            if (tecID == 2)
+            {
+                KeyText.text = "" + GameConst.tecsPowwer[battleManager.state2.Tec2];
             }
-            if(tecID == 3){
-                KeyText.text = ""+ GameConst.tecsPowwer[battleManager.state2.Tec3];
+            if (tecID == 3)
+            {
+                KeyText.text = "" + GameConst.tecsPowwer[battleManager.state2.Tec3];
             }
         }
     }

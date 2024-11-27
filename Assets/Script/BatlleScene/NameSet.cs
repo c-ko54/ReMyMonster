@@ -8,7 +8,7 @@ public class NameSet : MonoBehaviour
     [SerializeField] TextMeshProUGUI KeyText;
     [SerializeField] BattleManager battleManager;
     public int id;
-    void Start()
+    void Start()//画像下の名前書き出し
     {
         State state = StatesManager.instance.GetPlayerState(id);
         KeyText.text = StatesManager.instance.ChengeTypeColer(state.stname,state.type);

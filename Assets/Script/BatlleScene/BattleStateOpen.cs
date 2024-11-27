@@ -10,7 +10,7 @@ public class BattleStateOpen : MonoBehaviour
 
     public int id;
 
-    public void Set()
+    public void Set()//ステータスを表示
     {
         State state1 = battleManager.state1;
         State state2 = battleManager.state2;

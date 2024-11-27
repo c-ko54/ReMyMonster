@@ -14,7 +14,7 @@ public class StandbyScript : MonoBehaviour
     {
         a.SetActive(false);
     }
-
+    //技選択時に表示されるマーク設定
     void Update()
     {
         

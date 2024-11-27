@@ -4,10 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//没
 public class SetMonsterImage : MonoBehaviour
 {
-
-
     int ImageNum;
 
     private Image image;

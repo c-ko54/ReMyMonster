@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/First Title.unity
+    guid: 16593872d65bcd544acd5b65dc2377c3
+  - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: fd1cc9c557b6058419d27aeea05aa5a1
   - enabled: 1
@@ -26,4 +29,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2PResultScene.unity
     guid: 3e40446e2746df34cbf3eaa77f586a72
+  - enabled: 1
+    path: Assets/Scenes/CPU1PCreateScene 1.unity
+    guid: db37e7f35950322458eced42042ee412
+  - enabled: 1
+    path: Assets/Scenes/MapSccene.unity
+    guid: 7ded80ffc0c8cea45836a31d9cfe9065
+  - enabled: 1
+    path: Assets/Scenes/SummonCPU.unity
+    guid: c04062b7209fa414d88e1553a71b62e1
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: 6a379fe286a347a41924ab12bf17a67d
+  - enabled: 1
+    path: Assets/Scenes/WinCPU.unity
+    guid: 9c89ce082727b5943a9c83ba85cd5b2f
+  - enabled: 1
+    path: Assets/Scenes/HintScene.unity
+    guid: b1e457bed80828a4082fa5646b57f4b2
+  - enabled: 1
+    path: Assets/Scenes/Hint Collection.unity
+    guid: c5c5fa024d304404895eda4a02a7194b
   m_configObjects: {}

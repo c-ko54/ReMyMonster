@@ -40,7 +40,7 @@ public class HPset : MonoBehaviour
     }
     void Update()
     {
-                if(id == 1)
+        if(id == 1)
         {
         KeyText.text = "HP : " + battleManager.state1.hp;
         // KeyText.text = 

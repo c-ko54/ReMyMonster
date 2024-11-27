@@ -8,14 +8,15 @@ public class CreateManager : MonoBehaviour
     
 
     CharaCreate charaCreate;    
-    // Start is called before the first frame update
+
     void Start()
     {
+        SoundManager.Instance.PlayBGM(BGMSoundData.BGM.Summon);
         charaCreate = new CharaCreate();
         charaCreate.SetCreateManager(this);
     }
 
-    // Update is called once per frame
+//キャラ作成の実行
     public void CreateExecution()
     {
         int id = StatesManager.instance.PlayerNumber;
@@ -25,10 +26,14 @@ public class CreateManager : MonoBehaviour
         
         if(state.stname.Length <= 0)
         {
+            //文字が1文字も含まれてない場合は作成しない
+            StatesManager.instance.ResetPlayerState(id);
             Debug.Log("What your name?");
+            charaCreate.charaCreate("");
         }
         else
         {
+            //キャラの作成とログ
             charaCreate.charaCreate(state.stname);
             Debug.Log("name " + state.stname);
             Debug.Log("hp " + state.hp);
